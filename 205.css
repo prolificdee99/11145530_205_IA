@@ -5,24 +5,32 @@
 }
 
 body {
-    background-color: #f8f8f8; /* Light gray background */
+    background: url(cr8.jpg) center center fixed; /* Replace 'your-image-path.jpg' with the path to your image */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-    min-height: 100vh;
+    height: 100vh; /* Full height of the viewport */
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url('homebanner.jpg');
-    background-position: center;
-    background-size: cover;
-    color: #fff; /* Text color for better contrast */
+    color: #000; /* Text color for better contrast */
+    position: relative; /* Position relative for stacking elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
+    position: absolute; /* Position the navbar on top of the background image */
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    background-color: #007bff; /* Blue background color for visibility */
+    background-color: white; /* Set the navbar background color to white */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
@@ -30,45 +38,105 @@ nav img {
     width: 300px;
 }
 
+/* Add other styles for your sections, header, and footer as needed */
+.section {
+    padding: 20px;
+    color: blue; /* Adjust text color for better visibility on the background */
+}
+
+.section.header {
+    background-color: #333; /* Set a background color for the header section */
+    
+}
+
+
+.section.footer {
+    background-color: #333; /* Set a background color for the footer section */
+}
+
+/* Add more specific styles for other sections if needed */
+
 .nav-links {
-    flex: 1;
     text-align: right;
 }
 
-.nav-links ul li {
+.nav-links ul {
     list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin: 0 12px;
     position: relative;
 }
 
 .nav-links ul li a {
-    color: #fff; /* White text color for better visibility */
+    color: #000; /* Black text color for better visibility */
     text-decoration: none;
     font-size: 13px;
-}
-
-.nav-links ul li::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    display: block;
-    margin: auto;
-    background-color: #fff; /* White underline color */
-    transition: 0.5s;
-}
-
-.nav-links ul li:hover::after {
-    width: 100%;
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.5s; /* Add transition for color change */
 }
 
 .nav-links ul li:hover a {
-    text-decoration: underline;
-    color: #fff; /* White text color on hover */
+    color: gold; /* Change color on hover */
 }
 
-.textbox {
+footer {
+    background-color: #007bff; /* Set the background color to blue */
+    padding: 20px;
+    color: #fff;
     text-align: center;
-    margin-top: 20px;
-    color: #007bff; /* Blue text color */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h2 {
+    color: #fff;
+    border-bottom: 2px solid #fff; /* Add a white border below h2 */
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.welcome{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-transform: uppercase !important;
+    line-height: 1.5em;
+    
+        text-align: center;
+
+        margin-top: -420px;
+        color:greenyellow; /* Black text color */
+
+    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }

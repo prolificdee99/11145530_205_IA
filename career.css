@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.job-opportunities {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.job-card img {
+    max-width: 80%; /* Adjust the maximum width as needed */
+    max-height: 150px; /* Adjust the maximum height as needed */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Add some space below the image */
+}
+
+/* Existing styles... */

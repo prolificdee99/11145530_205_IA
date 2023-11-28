@@ -1,0 +1,42 @@
+nav {
+    position: absolute; /* Position the navbar on top of the background image */
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Make the navbar background transparent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+nav img {
+    width: 300px;
+}
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin: 0 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #000; /* Black text color for better visibility */
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.5s; /* Add transition for color change */
+}
+
+.nav-links ul li:hover a {
+    color: gold; /* Change color on hover */
+}
